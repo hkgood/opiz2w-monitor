@@ -1,6 +1,6 @@
 # Orange Pi Zero 2W LCD Monitor
 
-A system monitoring display for Orange Pi Zero 2W using Waveshare 1.44inch LCD HAT (ST7735S, 128x128).
+A system monitoring display for Orange Pi Zero 2W using Waveshare 1.3inch LCD HAT (ST7789VM, 240x240).
 
 ## Features
 
@@ -11,11 +11,13 @@ A system monitoring display for Orange Pi Zero 2W using Waveshare 1.44inch LCD H
 - Clock display with auto-sleep
 - Button navigation (Joystick + 3 keys)
 - Auto-start on boot via systemd
+- Apple / Dieter Rams minimalist design
+- Chinese text support
 
 ## Hardware Requirements
 
 - Orange Pi Zero 2W
-- Waveshare 1.44inch LCD HAT
+- Waveshare 1.3inch LCD HAT
 
 ## Installation
 
@@ -77,7 +79,7 @@ opiz2w-monitor/
 ├── monitor.py          # Main application
 ├── config.py           # Configuration
 ├── drivers/
-│   ├── lcd.py          # ST7735S LCD driver
+│   ├── lcd.py          # ST7789VM LCD driver
 │   └── buttons.py      # Button input handler
 ├── pages/
 │   ├── base.py         # Page base class
